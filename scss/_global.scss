@@ -1,0 +1,41 @@
+html,
+body {
+   height: 100%;
+}
+
+body {
+   font-size: 14px;
+   font-weight: 600;
+   font-family: 'Manrope', sans-serif;
+   color: $default;
+   overflow-x: hidden;
+   background-color: #F0F0F0;
+}
+
+button {
+   cursor: pointer;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.main {
+   flex: 1 0 auto;
+}
+
+.footer {
+   flex: 0 0 auto;
+}
+
+.container {
+   max-width: 1350px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+a {
+   color: inherit;
+}
