@@ -55,7 +55,7 @@ tabBottom.forEach(function (item) {
    item.addEventListener('click', function () {
       let currentBtn = item;
       let tabId = currentBtn.getAttribute('data-tab');
-      let currentTab = document.querySelector(tabId);
+      let curentTab = document.querySelector(tabId);
 
       tabBottom.forEach(function (item) {
          item.classList.remove('active');
@@ -64,7 +64,6 @@ tabBottom.forEach(function (item) {
          item.classList.remove('active');
       });
       currentBtn.classList.add('active');
-      currentTab.classList.add('active');
    })
 });
 
@@ -78,6 +77,18 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
    },
 });
+
+const swiperGroup = new Swiper('.country-swiper__block', {
+   slidesPerView: 3,
+   loop: true,
+   slideToClickedSlide: true,
+   spaceBetween: 8,
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+});
+
 
 
 let select = function () {
@@ -109,3 +120,4 @@ let select = function () {
 
 
 select();
+
